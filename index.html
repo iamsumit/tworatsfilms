@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Two Rats — An Animated Short Film</title>
 <meta name="description" content="Two Rats is a hand-drawn animated short film about two brothers trying to survive after their mother is killed on a foggy winter night.">
+<link rel="preload" as="image" href="images/background.jpg" fetchpriority="high">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -49,13 +50,13 @@
       <p>A tarpaulin shelter on a footpath. A bonfire near the society gate where a security guard keeps himself warm. A woman visible through a window, finishing her kitchen work before the light goes off.</p>
       <p>Nobody notices the rats, and the film doesn't point any of this out. It's just what a night like that looks like.</p>
       <div class="media-placeholder">
-        <img src="images/lookbook.png" alt="Lookbook / moodboard placeholder for Two Rats">
+        <img src="images/lookbook.jpg" width="3840" height="2160" loading="lazy" decoding="async" alt="Lookbook / moodboard placeholder for Two Rats">
       </div>
       <div class="shots">
-        <div class="shot"><video controls playsinline preload="metadata" poster="images/shot-01.png"><source src="videos/shot-01.mp4" type="video/mp4">Shot 01</video></div>
-        <div class="shot"><video controls playsinline preload="metadata" poster="images/shot-02.png"><source src="videos/shot-02.mp4" type="video/mp4">Shot 02</video></div>
-        <div class="shot"><video controls playsinline preload="metadata" poster="images/shot-03.png"><source src="videos/shot-03.mp4" type="video/mp4">Shot 03</video></div>
-        <div class="shot"><video controls playsinline preload="metadata" poster="images/shot-04.png"><source src="videos/shot-04.mp4" type="video/mp4">Shot 04</video></div>
+        <div class="shot"><video controls playsinline preload="none" poster="images/shot-01.jpg"><source src="videos/shot-01.mp4" type="video/mp4">Shot 01</video></div>
+        <div class="shot"><video controls playsinline preload="none" poster="images/shot-02.jpg"><source src="videos/shot-02.mp4" type="video/mp4">Shot 02</video></div>
+        <div class="shot"><video controls playsinline preload="none" poster="images/shot-03.jpg"><source src="videos/shot-03.mp4" type="video/mp4">Shot 03</video></div>
+        <div class="shot"><video controls playsinline preload="none" poster="images/shot-04.jpg"><source src="videos/shot-04.mp4" type="video/mp4">Shot 04</video></div>
       </div>
       <p class="small" style="margin-top:18px; font-family:Arial,sans-serif;font-size:11px;letter-spacing:.08em;text-transform:uppercase;">Key animation — first four shots</p>
     </div>
@@ -120,7 +121,7 @@
       <p style="max-width:650px;font-size:20px;">We are raising funds to complete the remaining animation, cleanup and post-production of <em>Two Rats</em>. Every contribution goes toward getting the film from its current state to a finished short.</p>
       <div class="support">
         <div class="qr">
-          <img src="images/qr-placeholder.png" alt="QR code placeholder — payment link coming soon">
+          <img src="images/qr-placeholder.png" width="300" height="300" loading="lazy" decoding="async" alt="QR code placeholder — payment link coming soon">
         </div>
         <div class="support-copy">
           <strong>Support the film</strong>
@@ -143,6 +144,6 @@
   <span>© <span data-year>2026</span> Two Rats Films</span>
 </footer>
 </div>
-<script src="js/main.js"></script>
+<script src="js/main.js" defer></script>
 </body>
 </html>
