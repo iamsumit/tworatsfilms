@@ -242,7 +242,15 @@ h2 {
   text-transform: uppercase;
   opacity: .7;
 }
-.upi-id { color: #9a3412; font-size: 14px; letter-spacing: .02em; user-select: all; }
+.upi-id {
+  color: #9a3412;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: .02em;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  user-select: all;
+}
 .upi-name strong { color: #9a3412; }
 
 .producer-note {
