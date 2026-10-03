@@ -135,7 +135,7 @@
       <div class="support">
         <div class="qr">
           <img src="images/qr.png" width="300" height="300" loading="lazy" decoding="async" alt="UPI QR code to support Two Rats. UPI ID: tworatsfilms@ybl">
-          <p class="upi"><span class="upi-label">UPI ID</span> <a class="upi-id" href="upi://pay?pa=tworatsfilms@ybl&amp;pn=Alpna&amp;cu=INR">tworatsfilms@ybl</a><br><span class="upi-name">Account name: <strong>Alpna</strong></span></p>
+          <p class="upi"><span class="upi-label">UPI ID</span> <a class="upi-id" href="upi://pay?pa=tworatsfilms@ybl&amp;pn=Alpna&amp;cu=INR&amp;tn=Two%20Rats">tworatsfilms@ybl</a><br><span class="upi-name">Account name: <strong>Alpna</strong></span></p>
         </div>
         <div class="support-copy">
           <strong>Support the film</strong>
@@ -160,5 +160,19 @@
 </footer>
 </div>
 <script src="js/main.js" defer></script>
+<script>
+(function () {
+  var q = 'pa=tworatsfilms@ybl&pn=Alpna&cu=INR&tn=' + encodeURIComponent('Two Rats');
+  var a = document.getElementById('gpay');
+  if (!a) return;
+  var ua = navigator.userAgent;
+  if (/Android/i.test(ua)) {
+    a.href = 'intent://pay?' + q + '#Intent;scheme=upi;package=com.google.android.apps.nbu.paisa.user;end';
+  } else if (/iPhone|iPad|iPod/i.test(ua)) {
+    a.href = 'gpay://upi/pay?' + q;
+  } else return;
+  a.hidden = false;
+})();
+</script>
 </body>
 </html>
