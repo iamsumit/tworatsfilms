@@ -217,18 +217,33 @@ h2 {
 /* Support block: QR + copy */
 .support {
   display: grid;
-  grid-template-columns: 150px 1fr;
-  gap: 28px;
-  align-items: center;
+  grid-template-columns: max-content 1fr;
+  gap: 32px;
+  align-items: start;
   margin-top: 34px;
   padding: 24px 0 0;
   border-top: 1px solid rgba(23, 21, 18, .22);
 }
-.support-copy { display: flex; flex-direction: column; gap: 8px; }
+.support-copy { display: flex; flex-direction: column; gap: 8px; padding-top: 4px; }
 .support-copy strong { font-size: 18px; }
 .support-copy .button { align-self: flex-start; margin-top: 8px; }
 
-.qr img { width: 150px; height: 150px; border: 1px solid #222; background: #fff; }
+.qr img { display: block; width: 150px; height: 150px; border: 1px solid #222; background: #fff; }
+
+.upi {
+  margin: 14px 0 0;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.upi-label {
+  font-size: 10px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  opacity: .7;
+}
+.upi-id { color: #9a3412; font-size: 14px; letter-spacing: .02em; user-select: all; }
+.upi-name strong { color: #9a3412; }
 
 .producer-note {
   margin-top: 42px;
